@@ -12,6 +12,7 @@
 		C420A0341FA8ECF6008D25F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420A0321FA8ECF6008D25F2 /* Main.storyboard */; };
 		C420A0361FA8ECF6008D25F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C420A0351FA8ECF6008D25F2 /* Assets.xcassets */; };
 		C420A0391FA8ECF6008D25F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */; };
+		C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C420A0351FA8ECF6008D25F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C420A0381FA8ECF6008D25F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C420A03A1FA8ECF6008D25F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C420A02E1FA8ECF6008D25F2 /* AppDelegate.swift */,
 				C420A0301FA8ECF6008D25F2 /* ViewController.swift */,
 				C420A0321FA8ECF6008D25F2 /* Main.storyboard */,
+				C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */,
 				C420A0351FA8ECF6008D25F2 /* Assets.xcassets */,
 				C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */,
 				C420A03A1FA8ECF6008D25F2 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				C420A0311FA8ECF6008D25F2 /* ViewController.swift in Sources */,
 				C420A02F1FA8ECF6008D25F2 /* AppDelegate.swift in Sources */,
+				C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
