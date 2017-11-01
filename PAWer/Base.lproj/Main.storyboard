@@ -166,8 +166,15 @@
                         <viewLayoutGuide key="safeArea" id="R2x-tt-uwm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Animals" id="gU7-t6-Q8T">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="c6c-NZ-upz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="c6c-NZ-upz">
+                            <connections>
+                                <action selector="addTapped:" destination="JyJ-uO-RBb" id="uAF-nk-zUo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="9h0-zM-mgo" id="KGX-h5-eer"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdN-8V-4vL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
