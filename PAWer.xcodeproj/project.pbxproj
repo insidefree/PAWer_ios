@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3DAC391E81413DD986EB04 /* Pods_PAWer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33B60E7CA437D1931A0890C /* Pods_PAWer.framework */; };
 		C420A02F1FA8ECF6008D25F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420A02E1FA8ECF6008D25F2 /* AppDelegate.swift */; };
 		C420A0311FA8ECF6008D25F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420A0301FA8ECF6008D25F2 /* LoginViewController.swift */; };
 		C420A0341FA8ECF6008D25F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420A0321FA8ECF6008D25F2 /* Main.storyboard */; };
 		C420A0361FA8ECF6008D25F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C420A0351FA8ECF6008D25F2 /* Assets.xcassets */; };
 		C420A0391FA8ECF6008D25F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */; };
 		C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */; };
+		C420A0471FAA6B86008D25F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AF1E7D529ABAAAD48C9A06A /* Pods-PAWer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAWer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PAWer/Pods-PAWer.release.xcconfig"; sourceTree = "<group>"; };
+		C33B60E7CA437D1931A0890C /* Pods_PAWer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PAWer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C420A02B1FA8ECF6008D25F2 /* PAWer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAWer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C420A02E1FA8ECF6008D25F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C420A0301FA8ECF6008D25F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		C420A0381FA8ECF6008D25F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C420A03A1FA8ECF6008D25F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FABDB606BE89D7AA7A7A4FDA /* Pods-PAWer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAWer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAWer/Pods-PAWer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3DAC391E81413DD986EB04 /* Pods_PAWer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79D281FBB798B2EB913FB9C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C33B60E7CA437D1931A0890C /* Pods_PAWer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7E3ABB40558A86A94F893B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FABDB606BE89D7AA7A7A4FDA /* Pods-PAWer.debug.xcconfig */,
+				2AF1E7D529ABAAAD48C9A06A /* Pods-PAWer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C420A0221FA8ECF6008D25F2 = {
 			isa = PBXGroup;
 			children = (
 				C420A02D1FA8ECF6008D25F2 /* PAWer */,
 				C420A02C1FA8ECF6008D25F2 /* Products */,
+				B7E3ABB40558A86A94F893B7 /* Pods */,
+				79D281FBB798B2EB913FB9C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +105,7 @@
 				C420A02E1FA8ECF6008D25F2 /* AppDelegate.swift */,
 				C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */,
 				C420A03A1FA8ECF6008D25F2 /* Info.plist */,
+				C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -90,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C420A03D1FA8ECF6008D25F2 /* Build configuration list for PBXNativeTarget "PAWer" */;
 			buildPhases = (
+				84DE039EA35C9DB9F43A7EA5 /* [CP] Check Pods Manifest.lock */,
 				C420A0271FA8ECF6008D25F2 /* Sources */,
 				C420A0281FA8ECF6008D25F2 /* Frameworks */,
 				C420A0291FA8ECF6008D25F2 /* Resources */,
+				1EA302E3CB3D42AADB16F4A1 /* [CP] Embed Pods Frameworks */,
+				E2D37A4F9FCCEFC54F9FDADC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,12 +173,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				C420A0391FA8ECF6008D25F2 /* LaunchScreen.storyboard in Resources */,
+				C420A0471FAA6B86008D25F2 /* GoogleService-Info.plist in Resources */,
 				C420A0361FA8ECF6008D25F2 /* Assets.xcassets in Resources */,
 				C420A0341FA8ECF6008D25F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EA302E3CB3D42AADB16F4A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PAWer/Pods-PAWer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PAWer/Pods-PAWer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84DE039EA35C9DB9F43A7EA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PAWer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D37A4F9FCCEFC54F9FDADC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PAWer/Pods-PAWer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C420A0271FA8ECF6008D25F2 /* Sources */ = {
@@ -292,6 +383,7 @@
 		};
 		C420A03E1FA8ECF6008D25F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABDB606BE89D7AA7A7A4FDA /* Pods-PAWer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +399,7 @@
 		};
 		C420A03F1FA8ECF6008D25F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF1E7D529ABAAAD48C9A06A /* Pods-PAWer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
