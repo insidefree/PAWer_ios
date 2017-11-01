@@ -76,6 +76,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j65-ni-Rmm"/>
                                                     <segue destination="SXY-84-74b" kind="show" identifier="animalsSegue" id="TZe-tZ-Tfx"/>
                                                 </connections>
                                             </button>
@@ -86,6 +87,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwj-5c-CMm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -113,6 +117,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="PVe-ba-hJ5" id="dYp-cA-Hdw"/>
+                        <outlet property="pswdTextField" destination="3YL-Wh-2eS" id="cg3-VV-c2P"/>
+                        <outlet property="warnLabel" destination="e55-tB-USB" id="rpD-xN-3en"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
