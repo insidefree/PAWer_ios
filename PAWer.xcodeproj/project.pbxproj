@@ -56,15 +56,31 @@
 		C420A02D1FA8ECF6008D25F2 /* PAWer */ = {
 			isa = PBXGroup;
 			children = (
-				C420A02E1FA8ECF6008D25F2 /* AppDelegate.swift */,
-				C420A0301FA8ECF6008D25F2 /* ViewController.swift */,
-				C420A0321FA8ECF6008D25F2 /* Main.storyboard */,
+				C420A0421FAA634F008D25F2 /* Controllers */,
+				C420A0431FAA635B008D25F2 /* SupportingFiles */,
+			);
+			path = PAWer;
+			sourceTree = "<group>";
+		};
+		C420A0421FAA634F008D25F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */,
+				C420A0301FA8ECF6008D25F2 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C420A0431FAA635B008D25F2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C420A0321FA8ECF6008D25F2 /* Main.storyboard */,
 				C420A0351FA8ECF6008D25F2 /* Assets.xcassets */,
+				C420A02E1FA8ECF6008D25F2 /* AppDelegate.swift */,
 				C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */,
 				C420A03A1FA8ECF6008D25F2 /* Info.plist */,
 			);
-			path = PAWer;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NV8H4J68BF;
-				INFOPLIST_FILE = PAWer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PAWer/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bench.PAWer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NV8H4J68BF;
-				INFOPLIST_FILE = PAWer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PAWer/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bench.PAWer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
