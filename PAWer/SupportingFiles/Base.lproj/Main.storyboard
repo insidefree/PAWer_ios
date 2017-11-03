@@ -77,7 +77,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j65-ni-Rmm"/>
-                                                    <segue destination="SXY-84-74b" kind="show" identifier="animalsSegue" id="TZe-tZ-Tfx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVd-5M-dXz">
@@ -120,6 +119,7 @@
                         <outlet property="emailTextField" destination="PVe-ba-hJ5" id="dYp-cA-Hdw"/>
                         <outlet property="pswdTextField" destination="3YL-Wh-2eS" id="cg3-VV-c2P"/>
                         <outlet property="warnLabel" destination="e55-tB-USB" id="rpD-xN-3en"/>
+                        <segue destination="SXY-84-74b" kind="show" identifier="animalsSegue" id="08j-sf-DmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
