@@ -22,14 +22,8 @@ class LoginViewController: UIViewController {
     }
     @objc func kbDidShow(notification: Notification){
         guard let userInfo = notification.userInfo else {return}
-        print("userInfo: \(userInfo)")
         let kbFrameSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        print("frameSize \(kbFrameSize)")
-        print(self.view.bounds.size)
         (self.view as! UIScrollView).contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height + kbFrameSize.height)
-        print(self.view)
-//        self.view.bounds.size = CGSize(width: self.view.bounds.size.width, height: 1000)
-        print(self.view.bounds.size)
         (self.view as! UIScrollView).scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: kbFrameSize.height, right: 0)
     }
     

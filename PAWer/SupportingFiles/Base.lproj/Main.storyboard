@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="4DK-O0-EL0">
-                                <rect key="frame" x="40" y="183" width="295" height="456"/>
+                                <rect key="frame" x="40" y="178" width="295" height="456"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Z60-lv-lH6">
                                         <rect key="frame" x="67.666666666666686" y="0.0" width="160" height="100"/>
@@ -110,12 +110,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.48917588591575623" green="0.69645982980728149" blue="0.95690369606018066" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="4DK-O0-EL0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="COI-VW-We5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4DK-O0-EL0" secondAttribute="trailing" constant="40" id="XQL-mi-MfW"/>
-                            <constraint firstItem="4DK-O0-EL0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rO4-lT-E6f"/>
-                            <constraint firstItem="4DK-O0-EL0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wbs-KL-VhX"/>
+                            <constraint firstItem="4DK-O0-EL0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="COI-VW-We5"/>
+                            <constraint firstAttribute="trailing" secondItem="4DK-O0-EL0" secondAttribute="trailing" constant="40" id="XQL-mi-MfW"/>
+                            <constraint firstItem="4DK-O0-EL0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rO4-lT-E6f"/>
+                            <constraint firstItem="4DK-O0-EL0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wbs-KL-VhX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="PVe-ba-hJ5" id="dYp-cA-Hdw"/>
