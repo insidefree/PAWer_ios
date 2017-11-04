@@ -15,6 +15,8 @@
 		C420A0391FA8ECF6008D25F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */; };
 		C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */; };
 		C420A0471FAA6B86008D25F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */; };
+		C4C64E591FADFD4100A1CA68 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C64E581FADFD4100A1CA68 /* Animal.swift */; };
+		C4C64E5B1FADFD4B00A1CA68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C64E5A1FADFD4B00A1CA68 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C420A03A1FA8ECF6008D25F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4C64E581FADFD4100A1CA68 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		C4C64E5A1FADFD4B00A1CA68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FABDB606BE89D7AA7A7A4FDA /* Pods-PAWer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAWer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAWer/Pods-PAWer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,7 @@
 		C420A02D1FA8ECF6008D25F2 /* PAWer */ = {
 			isa = PBXGroup;
 			children = (
+				C4C64E5C1FADFD5B00A1CA68 /* Models */,
 				C420A0421FAA634F008D25F2 /* Controllers */,
 				C420A0431FAA635B008D25F2 /* SupportingFiles */,
 			);
@@ -108,6 +113,15 @@
 				C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C4C64E5C1FADFD5B00A1CA68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4C64E581FADFD4100A1CA68 /* Animal.swift */,
+				C4C64E5A1FADFD4B00A1CA68 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C420A0311FA8ECF6008D25F2 /* LoginViewController.swift in Sources */,
+				C4C64E591FADFD4100A1CA68 /* Animal.swift in Sources */,
 				C420A02F1FA8ECF6008D25F2 /* AppDelegate.swift in Sources */,
+				C4C64E5B1FADFD4B00A1CA68 /* User.swift in Sources */,
 				C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
