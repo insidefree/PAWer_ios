@@ -165,6 +165,11 @@
                         <viewLayoutGuide key="safeArea" id="R2x-tt-uwm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Animals" id="gU7-t6-Q8T">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="zjS-gG-HbG">
+                            <connections>
+                                <action selector="signOutTapped:" destination="JyJ-uO-RBb" id="H8X-EF-ed9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="c6c-NZ-upz">
                             <connections>
                                 <action selector="addTapped:" destination="JyJ-uO-RBb" id="uAF-nk-zUo"/>

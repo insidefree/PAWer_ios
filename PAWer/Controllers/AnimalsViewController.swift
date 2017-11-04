@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -25,5 +26,13 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         print("add")
+    }
+    @IBAction func signOutTapped(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error.localizedDescription)
+        }
+        dismiss(animated: true, completion: nil)
     }
 }
