@@ -44,10 +44,14 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let animal = animals[indexPath.row]
+        let animalName = animal.name
+        let isCompleted = animal.completed
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .white
-        let animalName = animals[indexPath.row].name
+       
         cell.textLabel?.text = animalName
+        toggleCompletion(cell, isCompleted: isCompleted)
         
         return cell
     }
@@ -55,6 +59,31 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let animal = animals[indexPath.row]
+            animal.ref?.removeValue()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else {return}
+        let animal = animals[indexPath.row]
+        let isCompleted = !animal.completed
+        toggleCompletion(cell, isCompleted: isCompleted)
+        
+        animal.ref?.updateChildValues(["completed": isCompleted])
+    }
+    
+    func toggleCompletion(_ cell: UITableViewCell, isCompleted: Bool){
+        cell.accessoryType = isCompleted ? .checkmark : .none
+    }
+    
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "New animal", message: "Add new animal", preferredStyle: .alert)
         alertController.addTextField()
