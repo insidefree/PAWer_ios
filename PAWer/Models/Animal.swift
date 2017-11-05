@@ -28,4 +28,8 @@ struct Animal {
         completed = snapshotValue["completed"] as! Bool
         ref = snapshot.ref
     }
+    
+    func convertToDict() -> Any {
+        return ["name": name, "userId": userId, "completed": completed]
+    }
 }
