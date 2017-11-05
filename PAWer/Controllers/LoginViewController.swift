@@ -10,13 +10,15 @@ import UIKit
 import Firebase
 class LoginViewController: UIViewController {
     let segueIdentifire = "animalsSegue"
+    var ref: DatabaseReference!
+    
     @IBOutlet weak var warnLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pswdTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ref = Database.database().reference(withPath: "users")
         NotificationCenter.default.addObserver(self, selector: #selector(kbDidShow), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(kbDidHide), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
         
@@ -80,16 +82,15 @@ class LoginViewController: UIViewController {
             displayWarningLabel(withText: "Info is incorrect")
             return
         }
-        Auth.auth().createUser(withEmail: email, password: pswd) {(user, error) in
-            if error == nil{
-                if user != nil{
-                   
-                } else {
-                    print("user is not created")
-                }
-            } else {
-                print(error!.localizedDescription)
+        Auth.auth().createUser(withEmail: email, password: pswd) {[weak self] (user, error) in
+          
+            guard error == nil, user != nil else {
+                print(error?.localizedDescription as Any)
+                return
             }
+            
+            let userRef = self?.ref.child((user?.uid)!)
+            userRef?.setValue(["email": user?.email])
         }
     }
 }
