@@ -24,16 +24,36 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
         ref = Database.database().reference(withPath: "users").child(String(user.uid)).child("animals")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ref.observe(.value) { [weak self] (snapshot) in
+            var _animals = Array<Animal>()
+            for animal in snapshot.children{
+                let animal = Animal(snapshot: animal as! DataSnapshot)
+                _animals.append(animal)
+            }
+            self?.animals = _animals
+            self?.tableView.reloadData()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        ref.removeAllObservers()
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = .clear
-        cell.textLabel?.text = "This is cell number \(indexPath.row)"
         cell.textLabel?.textColor = .white
+        let animalName = animals[indexPath.row].name
+        cell.textLabel?.text = animalName
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return animals.count
     }
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "New animal", message: "Add new animal", preferredStyle: .alert)

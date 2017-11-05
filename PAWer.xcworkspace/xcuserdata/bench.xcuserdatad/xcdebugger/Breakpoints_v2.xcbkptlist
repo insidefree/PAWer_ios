@@ -6,47 +6,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PAWer/Controllers/AnimalsViewController.swift"
-            timestampString = "531591767.764527"
+            timestampString = "531592761.056547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "addTapped(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__ObjC.UIAlertAction) -&gt; () in PAWer.AnimalsViewController.addTapped(__ObjC.UIBarButtonItem) -&gt; ()"
                   moduleName = "PAWer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bench/Documents/Projects/PAWer/PAWer/Controllers/AnimalsViewController.swift"
-                  timestampString = "531588908.22527"
+                  timestampString = "531592761.381832"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "1850">
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "739">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__ObjC.UIAlertAction) -&gt; () in PAWer.AnimalsViewController.addTapped(__ObjC.UIBarButtonItem) -&gt; ()"
                   moduleName = "PAWer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bench/Documents/Projects/PAWer/PAWer/Controllers/AnimalsViewController.swift"
-                  timestampString = "531588908.230233"
+                  timestampString = "531592761.385005"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "4266">
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "3081">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PAWer/Controllers/AnimalsViewController.swift"
-            timestampString = "531591767.764648"
+            timestampString = "531592761.057148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "addTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PAWer/Controllers/AnimalsViewController.swift"
-            timestampString = "531591767.76472"
+            timestampString = "531592761.057454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PAWer/Controllers/AnimalsViewController.swift"
-            timestampString = "531591767.764774"
+            timestampString = "531592761.057723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
