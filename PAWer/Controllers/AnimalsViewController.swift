@@ -20,9 +20,7 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let currentUser = Auth.auth().currentUser else {return}
-        print("cu \(currentUser.uid)")
         user = Userp(user: currentUser)
-        print("USER \(user.uid)")
         ref = Database.database().reference(withPath: "users").child(String(user.uid)).child("animals")
     }
     
@@ -42,7 +40,6 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
         alertController.addTextField()
         let save = UIAlertAction(title: "Save", style: .default) { [weak self] _ in
             guard let textField = alertController.textFields?.first, textField.text != "" else {return}
-            print("self user \(String(describing: self?.user))")
             let animal = Animal(name: textField.text!, userId: (self?.user.uid)!)
             let animalRef = self?.ref.child(animal.name)
             animalRef?.setValue(animal.convertToDict())
