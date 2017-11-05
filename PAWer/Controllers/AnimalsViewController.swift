@@ -21,7 +21,7 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         guard let currentUser = Auth.auth().currentUser else {return}
         print("cu \(currentUser.uid)")
-        self.user = Userp(user: currentUser)
+        user = Userp(user: currentUser)
         print("USER \(user.uid)")
         ref = Database.database().reference(withPath: "users").child(String(user.uid)).child("animals")
     }
