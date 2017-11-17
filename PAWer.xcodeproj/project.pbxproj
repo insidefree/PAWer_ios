@@ -15,6 +15,8 @@
 		C420A0391FA8ECF6008D25F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420A0371FA8ECF6008D25F2 /* LaunchScreen.storyboard */; };
 		C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */; };
 		C420A0471FAA6B86008D25F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */; };
+		C43C8F801FBF2F3B0034954D /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C8F7F1FBF2F3B0034954D /* AnimalsTableViewController.swift */; };
+		C43C8F821FBF3DE00034954D /* AnimalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C8F811FBF3DE00034954D /* AnimalsTableViewCell.swift */; };
 		C4C64E591FADFD4100A1CA68 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C64E581FADFD4100A1CA68 /* Animal.swift */; };
 		C4C64E601FAE0A1000A1CA68 /* Userp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C64E5F1FAE0A1000A1CA68 /* Userp.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		C420A03A1FA8ECF6008D25F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		C420A0461FAA6B86008D25F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C43C8F7F1FBF2F3B0034954D /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
+		C43C8F811FBF3DE00034954D /* AnimalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimalsTableViewCell.swift; path = PAWer/Views/AnimalsTableViewCell.swift; sourceTree = "<group>"; };
 		C4C64E581FADFD4100A1CA68 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		C4C64E5F1FAE0A1000A1CA68 /* Userp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Userp.swift; path = PAWer/Models/Userp.swift; sourceTree = SOURCE_ROOT; };
 		FABDB606BE89D7AA7A7A4FDA /* Pods-PAWer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAWer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAWer/Pods-PAWer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		C420A0221FA8ECF6008D25F2 = {
 			isa = PBXGroup;
 			children = (
+				C43C8F811FBF3DE00034954D /* AnimalsTableViewCell.swift */,
 				C420A02D1FA8ECF6008D25F2 /* PAWer */,
 				C420A02C1FA8ECF6008D25F2 /* Products */,
 				B7E3ABB40558A86A94F893B7 /* Pods */,
@@ -98,6 +103,7 @@
 			children = (
 				C420A0401FAA5D67008D25F2 /* AnimalsViewController.swift */,
 				C420A0301FA8ECF6008D25F2 /* LoginViewController.swift */,
+				C43C8F7F1FBF2F3B0034954D /* AnimalsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C420A0311FA8ECF6008D25F2 /* LoginViewController.swift in Sources */,
+				C43C8F821FBF3DE00034954D /* AnimalsTableViewCell.swift in Sources */,
 				C4C64E601FAE0A1000A1CA68 /* Userp.swift in Sources */,
+				C43C8F801FBF2F3B0034954D /* AnimalsTableViewController.swift in Sources */,
 				C4C64E591FADFD4100A1CA68 /* Animal.swift in Sources */,
 				C420A02F1FA8ECF6008D25F2 /* AppDelegate.swift in Sources */,
 				C420A0411FAA5D67008D25F2 /* AnimalsViewController.swift in Sources */,
